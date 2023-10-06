@@ -21,7 +21,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauwe piste
 
   #### Je focus:
-  Responsive
+  Surface Plane
 </details>
 
 
@@ -55,6 +55,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+Content
+  - Afspeellijsten zoals de daily mix zeggen niet veel als je alleen de naam hoort. (Er wordt gezegd waar de link naartoe lijd)
+
+Global Code
+  - maximum-scale is minder dan 3 
+
+Keyboard
+  - Je begint met de side bars.
+
+Headings
+  - Ze gebruiken op veel plekken geen H1, H2, H3.. of p voor tekst elementen maar div's.
+
+Lists
+  - Maakt geen gebruik van list items
+
+Images
+  - Nergens een alt atribuut
+
+Controls
+  - Er zijn veel elementen waar je op kunt klikken, maar het is meer als app gedesigned dan als website.
+
+Appearance
+  - Spotify is standaard ingesteld in Dark Mode
 
 </details>
 
@@ -92,11 +116,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Kenza          | Bregtje            | Fleur        | Stella           |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | stappenplan    | HTML Checken       | en ik dit    | en dan ik dat    |
+  | bespreken      | Hover werkt niet   | nog een punt | dit wil ik zeker |
+  |                | Webkit scrollbar   | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -155,9 +179,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
 </details>
-
-
-
 
 
 ## Voortgang 3 (week 4)

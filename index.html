@@ -5,8 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Kenza">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-	
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<title>FED Website</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
@@ -15,62 +14,126 @@
 
 <body>
 	<header>
-        <!-- <h1></h1> -->
+        <h1 id="greeting"></h1>
     </header>
-
     <main>
-		
+        <!-- Featured Playlist -->
         <section>
-            <h2>Featured</h2>
+            <h2>Featured Playlists</h2>
             <ul>
                 <li>
-                    <a href="#">
-                    <div>
-                        <img src="https://i.scdn.co/image/ab67706c0000da844e79b027635451a85fe995e9">
-                    </div>
-                    <p>Test</p>
+                    <a href="playlist.html">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67706c0000da844e79b027635451a85fe995e9">
+                        </div>
+                    <p>llı 𝙼y 𝚁everie ıll</p>
                     </a>
+                    <button class="play-button" type="button">
+                        <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="playlist.html">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e022ff09c6958375672281b635f">
+                        </div>
+                    <p>Secret</p>
+                    </a>
+                    <button class="play-button">
+                        <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="playlist.html">
+                        <div>
+                            <img src="https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat2_DEFAULT-en.jpg">
+                        </div>
+                    <p>On Repeat</p>
+                    </a>
+                    <button class="play-button">
+                        <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                    </button>
+                </li>
+                <li>
+                    <a href="playlist.html">
+                        <div>
+                            <img src="https://daily-mix.scdn.co/covers/backtracks/PZN_Repeat_Rewind2_DEFAULT-en.jpg">
+                        </div>
+                    <p>Repeat Rewind</p>
+                    </a>
+                    <button class="play-button">
+                        <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                    </button>
                 </li>
             </ul>
         </section>
-
         <section>
-            <!-- <h2>New Releases</h2>
+            <div>
+                <h2><a href="playlist.html">Made for Kenza</a></h2>
+                <p><a href="playlist.html">Show all</a></p>
+            </div>
             <div>
                 <div>
-                    <img src="#" alt="Album 1">
-                    <p>Album 1</p>
+                    <article>
+                        <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebf83823555da55fd07555fbd0/1/en/default">
+                        <h3>Daily Mix 1</h3>
+                        <p>Charlie Puth, Conor Maynard, Shawn Mendes and more</p>
+                    </article>
                 </div>
                 <div>
-                    <img src="#" alt="Album 2">
-                    <p>Album 2</p>
+                    <article>
+                        <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb02a20af054720884e7ed4352/2/en/default">
+                        <h3>Daily Mix 2</h3>
+                        <p>Tate McRae, AJ Mitchell, FLETCHER and more</p>
+                    </article>
                 </div>
                 <div>
-                    <img src="#" alt="Album 3">
-                    <p>Album 3</p>
+                    <article>
+                        <img src="https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5eb0891cdebc4c8c7bda022a8c9/en">
+                        <h3>Release Radar</h3>
+                        <p>Catch all the latest music from artists you follow...</p>
+                    </article>
+                </div>
+                <div>
+                    <article>
+                        <img src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/47CXiABmh1uI4So64vCt_WvVjt1uNkFtWdql9SVFCTzHNoaVv94Xd_OQAGGwx6BEptgi_ICf3HytSC9neQslgnuGO8MXbZxwsDR2TAlu-7E=/OTU6ODM6NTBUNDEtMDEtMw==">
+                        <h3>Discover Weekly</h3>
+                        <p>Your weekly mixtape of fresh music. Enjoy new...</p>
+                    </article>
                 </div>
             </div>
+        </section>
+        <section>
+            
+        </section>
+        <!-- <section>
+            <h2>Email Verification</h2>
+            <p>Enter your email address to verify your account.</p>
+            <form>
+                <label name="E-mail" type="e-mail">E-mail</label>
+                <input placeholder="E-mail">
+                <button type="submit">Verify</button>
+            </form>
         </section> -->
+        
     </main>
-
     <footer>
-        <!-- Currently playing -->
-		<!-- <nav>
+        <!-- <section>
+            <img src="https://i.scdn.co/image/ab67616d00001e022ff09c6958375672281b635f">
+        </section> -->
+        <!-- <nav>
             <ul>
                 <li>
-					<svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"></path></svg>
-					<a href="Playlist.html">Home</a>
-				</li>
-                <li>
-					<svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path></svg>
-					<a>Search</a>
-				</li>
-                <li>
-					<svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z"></path></svg>
-					<a>Your Library</a>
-				</li>
+                    <a href="index.html" target="_self">
+                        <svg role="img" height="24" width="24" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq home-active-icon" viewBox="0 0 24 24" data-encore-id="icon"><path d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"></path></svg>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li></li>
+                <li></li>
             </ul>
         </nav> -->
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
