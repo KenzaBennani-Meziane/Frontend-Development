@@ -17,6 +17,6 @@ if (currentTime >= 18) {
 }
 
 
-document.getElementById("greeting").textContent = greeting;
+document.querySelector("#greeting").textContent = greeting;
 
 // queryselector gebruiken

@@ -8,24 +8,8 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-@media (prefers-color-scheme:light) {
+
 :root {
-	/* startje */
-	--color-text:#00000;
-	--color-subtext: #b3b3b3;
-	--background-base: #ececec;
-	--color-selection-1: #2c2b2b;
-	--color-selection-2: #171717;
-    --color-green: #1ed760;
-    --featured-list: hsla(0, 0%, 60%, 0.1);
-    --featured-list-hover: hsla(0, 0%, 42%, 0.2);
-    --block-list: #e8e7e7;
-    --block-list-hover: hsla(0, 0%, 42%, 0.2);
-    --item-size: 4em;
-    --box-shadow: 0 0.5em 1.5em rgba(0,0,0,.5);
-    }
-}
-    :root {
 	/* startje */
 	--color-text:#ffff;
 	--color-subtext: #b3b3b3;
@@ -42,12 +26,32 @@
     --box-shadow: 0 0.5em 1.5em rgba(0,0,0,.5);
 }
 
+@media (prefers-color-scheme:light) {
+:root {
+	/* Light theme */
+	--color-text:#00000;
+	--color-subtext: #b3b3b3;
+    --description: #2c2b2b;
+	--background-base: #ececec;
+	--color-selection-1: #2c2b2b;
+	--color-selection-2: #171717;
+    --color-green: #1ed760;
+    --featured-list: #ffffff;
+    --featured-list-hover: hsla(141, 76%, 48%, 0.329);
+    --block-list: #ffffff;
+    --block-list-hover: hsla(141, 91%, 59%, 0.712);
+    --item-size: 4em;
+    --box-shadow: 0 0.5em 1.5em rgba(0,0,0,.5);
+    }
+}
+
+
 /****************/
 /* JOUW STYLING */
 /****************/
 
 body {
-	max-width: 22.5em;
+	width: 25em;
 	align-content: center;
 	background-color: var(--background-base);
     color: var(--color-text);
@@ -67,6 +71,7 @@ h2 {
 
 p {
     font-size: 1em;
+    position: relative;
 }
 
 main {
@@ -83,11 +88,53 @@ a {
     color: var(--color-text);
 }
 
-section {
+/* p a::before {
+    content:"";
+    position:absolute;
+    width: 4.2em;
+    bottom: 29em;
+    
+    height:.2em;
+    
+    background-color:currentcolor;
+    border-radius:.125em;
+    
+    transform-origin:right;
+    transform:scalex(0);
+    transition:transform .3s;
+}
+
+p a:hover::before {
+    transform-origin:left;
+    transform:scalex(1);
+} */
+
+/*  */
+p a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .2em;
+    bottom: 0;
+    left: 0;
+    background-color: currentcolor;
+    border-radius: .125em;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+p a:hover::before {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+/* =========================== Home Page =========================== */
+.home-page section {
     margin-bottom: 1.875em;
 }
 
-.play-button {
+.home-page .play-button {
     border-radius: 4em;
     height: 4em;
     width: 4em;
@@ -97,39 +144,39 @@ section {
     visibility: hidden;
 }
 
-li:hover .play-button{
+.home-page li:hover .play-button{
     visibility: visible;
 }
 
 /* =========== Featured Playlists =========== */
-section:nth-of-type(1) div:nth-of-type(1) { 
+.home-page section:nth-of-type(1) div:nth-of-type(1) { 
     display: flex;
     justify-content: space-between;
     box-shadow: var(--box-shadow);
 }
 
-section:nth-of-type(1) ul, li {
+.home-page section:nth-of-type(1) ul, li {
     display: grid;
     grid-gap: 0.5em;
 }
 
-section:nth-of-type(1) img {
+.home-page section:nth-of-type(1) img {
     height: auto;
     border-radius: 0.25em 0em 0em 0.25em;
 }
 
-section:nth-of-type(1) a {
+.home-page section:nth-of-type(1) a {
     display: flex;
     align-items: center;
     overflow: hidden; /* Zorgt ervoor dat de schaduw niet buiten het kader doorloopt */
 }
 
-section:nth-of-type(1) p {
+.home-page section:nth-of-type(1) p {
     padding: 0em 1em;
     font-weight: 600;
 }
 
-section:nth-of-type(1) ul:nth-of-type(1) li {
+.home-page section:nth-of-type(1) ul:nth-of-type(1) li {
     background-color: var(--featured-list);
     border-radius: 0.25em;
     height: var(--item-size);
@@ -139,56 +186,56 @@ section:nth-of-type(1) ul:nth-of-type(1) li {
     justify-content: space-between;
 }
 
-section:nth-of-type(1) ul:nth-of-type(1) li:hover {
+.home-page section:nth-of-type(1) ul:nth-of-type(1) li:hover {
     background-color: var(--featured-list-hover);
 }
 
-ul:nth-of-type(1) img {
+.home-page ul:nth-of-type(1) img {
     display: block;
     object-fit: cover;
     width: 100%;
 }
 
-section:nth-of-type(1) div:nth-of-type(1) {
+.home-page section:nth-of-type(1) div:nth-of-type(1) {
     height: var(--item-size);
     width: var(--item-size);
 }
 
 /* =========== Made for User List =========== */
 
-section:nth-of-type(2) div:nth-of-type(1) {
+.home-page section:nth-of-type(2) div:nth-of-type(1) {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-section:nth-of-type(2) ul:nth-of-type(1) img {
+.home-page section:nth-of-type(2) ul:nth-of-type(1) img {
     height: 8.75em;
     width: 8.75em;
     border-radius: 0.5em;
     margin-bottom: 1em;
 }
 
-section:nth-of-type(2) > ul:nth-of-type(1) {
+.home-page section:nth-of-type(2) > ul:nth-of-type(1) {
     display: grid;
     gap: 0.5em;
     grid-template-columns: 1fr 1fr;
 }
 
-section:nth-of-type(2) article h3 {
+.home-page section:nth-of-type(2) li h3 {
     margin: 0;
     padding-bottom: 0.5em;
 }
 
-section:nth-of-type(2) article p {
+.home-page section:nth-of-type(2) li p {
     font-size: 0.875em;
     margin: 0;
     font-weight: 400;
     color: var(--description, #6a6a6a);
 }
 
-section:nth-of-type(2) ul:nth-of-type(1) article {
+.home-page section:nth-of-type(2) ul:nth-of-type(1) li {
     background-color: var(--block-list);
     border-radius: 0.5em;
     box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1);
@@ -197,16 +244,95 @@ section:nth-of-type(2) ul:nth-of-type(1) article {
     transition: background-color .3s ease; /* Voor een vloeiende ease in en out transitie wanneer je hovert (en zodat het niet in 1x uit gaat wanneer je weg hovert) */
 }
 
-section:nth-of-type(2) ul:nth-of-type(1) article:hover {
+.home-page section:nth-of-type(2) ul:nth-of-type(1) li:hover {
     background-color: var(--block-list-hover);
 }
 
-/* section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) article {
-    display: flex;
-    flex-direction: column;
-}
- */
 /* =========== Form =========== */
+
+
+
+/* =========================== Profile Page =========================== */
+
+/* =========== User Profile Header =========== */
+.profile-page section:nth-of-type(1) {
+    background-color: rgb(96, 72, 136);
+}
+
+.profile-page section:nth-of-type(1) article {
+    background: linear-gradient(transparent 0,rgba(0,0,0,.5) 100%);
+}
+
+.profile-page section:nth-of-type(1) article > div:nth-of-type(1) {
+    padding: 4.5em 1em 1em;
+}
+
+.profile-page section:nth-of-type(1) article > div:nth-of-type(1) > div:nth-of-type(1) {
+    display: flex;
+    gap:.5em;
+}
+
+.profile-page section:nth-of-type(1) img {
+    height: 9em;
+    width: 9em;
+    border-radius: 50%;
+}
+.profile-page section:nth-of-type(1) h1 {
+    font-size: 1.7em;
+    font-weight: 1000;
+    margin: 0;
+}
+
+.profile-page section:nth-of-type(1) p {
+    font-size: .9em;
+    margin-right: .25em;
+}
+
+.profile-page section:nth-of-type(1) article > div:nth-of-type(1) div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+}
+
+/* =========== Top Artists Month =========== */
+.profile-page section:nth-of-type(2) {
+    background-color: rgb(96, 72, 136);
+}
+
+.profile-page section:nth-of-type(2) h3 {
+    font-size: .9em;
+}
+
+.profile-page section:nth-of-type(2) p {
+    font-size: .8em;
+}
+
+.profile-page section:nth-of-type(2) > div:nth-of-type(1) {
+    background: linear-gradient(rgba(0,0,0,.6) 0,var(--background-base) 100%);
+    padding: 2em .5em .5em;
+    overflow-x: hidden;
+}
+
+.profile-page section:nth-of-type(2) > div:nth-of-type(1) div:nth-of-type(1){
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-page section:nth-of-type(2) > div:nth-of-type(1) ul {
+    display: flex;
+    
+}
+
+.profile-page section:nth-of-type(2) > div:nth-of-type(1) ul li{
+    padding: 1em;
+}
+
+.profile-page section:nth-of-type(2) > div:nth-of-type(1) ul li img{
+    border-radius: 50%;
+    height: 7em;
+    width: 7em;
+}
 
 
 /* =========== Footer =========== */
