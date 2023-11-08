@@ -17,6 +17,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Auteur:
   Kenza Bennani-Meziane
+
   #### Je startniveau:
   Rode piste
 
@@ -38,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina  
-  <img src="images/Home.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/Home.png" width="375px" alt="Spotify home pagina op mobiel">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Playlist pagina 
-  <img src="images/Profile.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/Profile.png" width="375px" alt="Spotify profiel pagina">
  
 </details>
 
@@ -90,13 +91,15 @@ Appearance
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Home (breakdown).png" width="375px" alt="Ik zal de verschillende categorien in sections maken en gebruik maken van ul en li">
+
+  <img src="readme-images/Profile (breakdown).png" width="375px" alt="Ik zal de verschillende categorien in sections maken en gebruik maken van ul en li">
+
+Ik zal de verschillende categorien in sections maken en gebruik maken van ul en li
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Home (breakdown).png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -111,6 +114,8 @@ Appearance
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  Ik had moeite met het laten passen van de afbeelding binnen een bepaald kader.
 
   Het beginnen was een beetje lastig, ik wist niet zo goed hoe ik een opzet moest maken.
   Met behulp van de leraar en het advies dat ik kreeg, kon ik makkelijk op weg en besloot ik per deel alles goed uit te werken voordat ik naar het volgende deel besloot te gaan.
@@ -128,9 +133,9 @@ Appearance
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Stappenplan bespreken voor de voortgang
+  - HTML Checken of in her ord is
+  - HTML/CSS checken
   - ...
 
 </details>
@@ -146,15 +151,16 @@ Appearance
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het was lastig om de buttons er te voorschijn te laten komen, maar het is me uiteindelji grooete
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | Kenza          | Bregtje            | Fleur        | Sanne            |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Grid fixen     | ---                | ---          | ---              |
+  |                |                    | Hamburgermenu|                  |
+  |                |                    |              |                  |
   | ...            | ...                | ...          | ...              |
 
 
@@ -162,10 +168,8 @@ Appearance
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Gebruik maken van ">" om de grid te fixen
+  - ...
 
 </details>
 
@@ -182,7 +186,33 @@ Appearance
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   
   Content
-  - 
+  - Niks op te merken
+
+  Global Code
+  - No valid HTML
+
+  Keyboard
+  - Keyboard focus doesn't match the visual layout
+
+  Mobile and Touch
+  - Button and link icons cannot be activated with ease
+
+  Images
+  - Not all images have an alt attribute
+  - No alternatives for images (but there is no use of complex images)
+  - Images with text have no alt attribute yet
+
+  Media
+  - Media should be able to be paused
+
+  Controls
+  - Doesn't use links that open a new tab or window (good)
+
+  Appearance
+  - Light mode is supported (standard is Dark mode)
+
+  Animation
+  N.v.t
 
 </details>
 
