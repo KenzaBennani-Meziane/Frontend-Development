@@ -10,7 +10,6 @@
 /*********************/
 
 :root {
-	/* startje */
 	--color-text:#ffff;
 	--color-subtext: #b3b3b3;
     --description: #a7a7a7;
@@ -24,6 +23,9 @@
     --block-list-hover: #282828;
     --item-size: 4em;
     --box-shadow: 0 0.5em 1.5em rgba(0,0,0,.5);
+    --profile-color: rgb(96, 72, 136); 
+    --profile-shadow-1: linear-gradient(transparent 0,rgba(0,0,0,.5) 100%);
+    --profile-shadow-2: rgba(0,0,0,.6);
 }
 
 @media (prefers-color-scheme:light) {
@@ -42,6 +44,9 @@
     --block-list-hover: hsla(141, 91%, 59%, 0.712);
     --item-size: 4em;
     --box-shadow: 0 0.5em 1.5em rgba(0,0,0,.5);
+    --profile-color: rgb(72, 136, 106);
+    --profile-shadow-1: linear-gradient(transparent 0,#ada 100%);
+    --profile-shadow-2: #78a778;
     }
 }
 
@@ -114,6 +119,10 @@ p a:hover::before, h2:hover::before {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+
+.play-button {
+    cursor: pointer;
 }
 
 /* =========================== Home Page =========================== */
@@ -233,17 +242,47 @@ p a:hover::before, h2:hover::before {
 
 /* =========== Form =========== */
 
+.home-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 20em;
+}
+
+.home-page input {
+    background-color: var(--background-base);
+    padding: 1em 2.25em;
+    outline: 2px solid transparent;
+    transition: color .3s ease;
+}
+
+input:focus, input:hover {
+    outline: 2px solid var(--color-text);
+}
+
+.home-page form > button {
+    background-color: var(--color-green);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1em;
+    padding: .5em 2em;
+    border-radius: 5em;
+    width: 15em;
+    cursor: pointer;
+}
 
 
 /* =========================== Profile Page =========================== */
 
 /* =========== User Profile Header =========== */
 .profile-page section:nth-of-type(1) {
-    background-color: rgb(96, 72, 136);
+    background-color: var(--profile-color);
 }
 
 .profile-page section:nth-of-type(1) article {
-    background: linear-gradient(transparent 0,rgba(0,0,0,.5) 100%);
+    background: var(--profile-shadow-1);
 }
 
 .profile-page section:nth-of-type(1) article > div:nth-of-type(1) {
@@ -279,7 +318,7 @@ p a:hover::before, h2:hover::before {
 
 /* =========== Top Artists Month =========== */
 .profile-page section:nth-of-type(2) {
-    background-color: rgb(96, 72, 136);
+    background-color: var(--profile-color);
 }
 
 .profile-page section:nth-of-type(2) h3 {
@@ -287,14 +326,14 @@ p a:hover::before, h2:hover::before {
     margin-bottom: .5em;
 }
 
-.profile-page section:nth-of-type(2) p {
+.profile-page section:nth-of-type(2) ul p {
     font-size: .7em;
     margin: 0;
     color: var(--color-subtext);
 }
 
 .profile-page section:nth-of-type(2) > div:nth-of-type(1) {
-    background: linear-gradient(rgba(0,0,0,.6) 0,var(--background-base) 100%);
+    background: linear-gradient(var(--profile-shadow-2) 0,var(--background-base) 100%);
     padding: 2em .5em .5em;
 }
 
@@ -397,22 +436,102 @@ button {
     border: none;
     padding: 0;
 }
+
+
+/* =========== Public Playlists =========== */
+.profile-page section:nth-of-type(4) h3 {
+    font-size: .8em;
+    margin-bottom: .5em;
+}
+
+.profile-page section:nth-of-type(4) ul p {
+    font-size: .7em;
+    margin: 0;
+    color: var(--color-subtext);
+}
+
+.profile-page section:nth-of-type(4) > div:nth-of-type(1) {
+    padding: 2em .5em .5em;
+}
+
+.profile-page section:nth-of-type(4) > div:nth-of-type(1) ul {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Voor Firefox om de scrollbar te verbergen */
+    -ms-overflow-style: none; /* Voor Edge om de scrollbar te verbergen */
+}
+
+/* Scrollbar in Chrome verbergen */
+.profile-page section:nth-of-type(4) > div:nth-of-type(1) ul::-webkit-scrollbar {
+    display: none;
+}
+
+.profile-page section:nth-of-type(4) > div:nth-of-type(1) ul li{
+    padding: 1em;
+    margin: 0 .5em;
+    border-radius: .5em;
+    background-color: var(--block-list);
+    transition: background-color .3s ease;
+}
+
+.profile-page section:nth-of-type(4) > div:nth-of-type(1) ul li:hover {
+    background-color: var(--block-list-hover);
+}
+
+.profile-page section:nth-of-type(4) > div:nth-of-type(1) ul li img{
+    border-radius: .3em;
+    height: 7em;
+    width: 7em;
+}
+
 /* =========== Footer =========== */
 footer {
     position: fixed;
     bottom: 0;
+    width: 25em;
+    height: 5em;
+    background-color: black;
 }
 
-footer section:nth-of-type(1) {
-    width: 100%;
-    background-color: red;
+footer svg {
+    width: 2em;
+    height: 2em;
 }
 
-footer section:nth-of-type(1) img {
-    width: 2.5em;
-    height: 2.5em;
+footer p{
+    margin: 0 1em 0 0;
 }
 
 footer nav a{
     fill: var(--color-text);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in-out {
+    animation: fadeInOut 3s ease-in-out;
+}
+
+footer nav ul li a {
+    transition: transform 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    transform: scale(1.1); 
+    transform: rotate(10deg);
 }

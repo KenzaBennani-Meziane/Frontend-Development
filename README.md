@@ -42,6 +42,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/Home.png" width="375px" alt="Spotify home pagina op mobiel">
 
   #### Screenshot(s) van de tweede pagina (small screen):
+  
   Playlist pagina 
   <img src="readme-images/Profile.png" width="375px" alt="Spotify profiel pagina">
  
@@ -60,26 +61,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Content
   - Afspeellijsten zoals de daily mix zeggen niet veel als je alleen de naam hoort. (Er wordt gezegd waar de link naartoe lijd)
 
+
 Global Code
   - maximum-scale is minder dan 3 
+
 
 Keyboard
   - Je begint met de side bars.
 
+
 Headings
   - Ze gebruiken op veel plekken geen H1, H2, H3.. of p voor tekst elementen maar div's.
+
 
 Lists
   - Maakt geen gebruik van list items
 
+
 Images
   - Nergens een alt atribuut
+
 
 Controls
   - Er zijn veel elementen waar je op kunt klikken, maar het is meer als app gedesigned dan als website.
 
+
 Appearance
   - Spotify is standaard ingesteld in Dark Mode
+
 
 </details>
 
@@ -99,6 +108,8 @@ Ik zal de verschillende categorien in sections maken en gebruik maken van ul en 
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/Home (breakdown).png" width="375px" alt="breakdown van een dynamisch deel">
+
+  Het dynamische gedeelte voor mijn website is te zien wanneer je hovert over bepaalde items en je een play button ziet die je kunt indrukken en er dan audio afspeelt.
 
 
 </details>
@@ -157,11 +168,10 @@ Ik zal de verschillende categorien in sections maken en gebruik maken van ul en 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Kenza          | Bregtje            | Fleur        | Sanne            |
-  | Grid fixen     | ---                | ---          | ---              |
-  |                |                    | Hamburgermenu|                  |
-  |                |                    |              |                  |
-  | ...            | ...                | ...          | ...              |
+  | Kenza          | Bregtje        | Fleur         |Sanne            |  | Grid fixen     | ---            | ---           | ---             |
+  |                |                | Hamburgermenu |                 |
+  |                |                |               |                 |
+  | ...            | ...            | ...           | ...             |
 
 
 
@@ -229,20 +239,18 @@ Ik zal de verschillende categorien in sections maken en gebruik maken van ul en 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Kenza          | Bregtje            | Fleur        | Sara             |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Kenza          | Bregtje      | Fleur        |Sara             |
+  | ---            | ---          | ---          | ---             |
+  | Feedback vragen| Flex vs Grid | Github       | Form errors     ||                | Lengte alt   | HTML checken | HTML check      |
+  | ...            | tekst        | ...          | ...             |
+  |                | Screenreaeder|              |                 | 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Form errors besproken
+  - Flex vs Grid, niet zo een groot verschil
+  - Legte alt tekst moet relevant zijn
 
 </details>
 
@@ -267,6 +275,7 @@ Ik zal de verschillende categorien in sections maken en gebruik maken van ul en 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  Het was voor mij lastig op de Top Tracks ook audio te laten afspelen en op de afspeellijsten de play button te vertonen. Ik had het daarom maar toch gelaten voor wat het was.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -285,8 +294,8 @@ Ik zal de verschillende categorien in sections maken en gebruik maken van ul en 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - Ik moest de lijst op de index pagina veranderen naar een unordened list.
+  - Werken aan mijn tweede pagina
   - nog een punt
   - ...
 

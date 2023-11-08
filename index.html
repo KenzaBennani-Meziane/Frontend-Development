@@ -30,7 +30,6 @@
                         </div>
                     <p>llı 𝙼y 𝚁everie ıll</p>
                     </a>
-                    <!-- Make the buttons clickable and play music if you do -->
                     <button class="play-button" type="button">
                         <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
                     </button>
@@ -110,19 +109,26 @@
             </ul>
         </section>
         <section>
-            <h2>Verify your email</h2>
-            <p>Enter your email address to verify your account.</p>
+            <div class="section-title">
+                <h2>One last step</h2>
+            </div>
+            <p>We need your email address to verify your account.</p>
             <form>
-                <input placeholder="Email">
+                <label for="email"></label>
+                <input placeholder="name@domain.com">
                 <button type="submit">Verify</button>
             </form>
         </section>
     </main>
     <footer>
+        <audio id="audioPlayer">
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+        
         <!-- <section>
             <img src="https://i.scdn.co/image/ab67616d00001e022ff09c6958375672281b635f">
         </section> -->
-        <!-- <nav>
+        <nav>
             <ul>
                 <li>
                     <a href="index.html" target="_self">
@@ -130,10 +136,19 @@
                         <p>Home</p>
                     </a>
                 </li>
-                <li></li>
-                <li></li>
+                    <a href="index.html" target="_self">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA"><path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path></svg>
+                        <p>Search</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" target="_self">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA"><path d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z"></path></svg>
+                        <p>Library</p>
+                    </a>
+                </li>
             </ul>
-        </nav> -->
+        </nav>
     </footer>
     <script src="scripts/script.js"></script>
 </body>

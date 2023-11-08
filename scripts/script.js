@@ -16,7 +16,21 @@ if (currentTime >= 18) {
     greeting = "Good night";
 }
 
-
 document.querySelector("#greeting").textContent = greeting;
 
-// queryselector gebruiken
+
+
+const audioPlayer = document.querySelector("#audioPlayer");
+const playButtons = document.querySelectorAll(".play, .play-button");
+
+function toggleAudio() {
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+    } else {
+        audioPlayer.pause();
+    }
+}
+
+playButtons.forEach(button => {
+    button.addEventListener("click", toggleAudio);
+});
