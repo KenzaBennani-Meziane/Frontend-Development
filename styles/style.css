@@ -67,6 +67,8 @@ h1 {
 h2 {
     font-size: 1.5em;
     font-weight: 600;
+    position: relative;
+
 }
 
 p {
@@ -88,33 +90,11 @@ a {
     color: var(--color-text);
 }
 
-/* p a::before {
-    content:"";
-    position:absolute;
-    width: 4.2em;
-    bottom: 29em;
-    
-    height:.2em;
-    
-    background-color:currentcolor;
-    border-radius:.125em;
-    
-    transform-origin:right;
-    transform:scalex(0);
-    transition:transform .3s;
-}
-
-p a:hover::before {
-    transform-origin:left;
-    transform:scalex(1);
-} */
-
-/*  */
-p a::before {
+p a::before, h2::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: .2em;
+    height: .15em;
     bottom: 0;
     left: 0;
     background-color: currentcolor;
@@ -124,9 +104,16 @@ p a::before {
     transition: transform 0.3s;
 }
 
-p a:hover::before {
+p a:hover::before, h2:hover::before {
     transform-origin: center;
     transform: scaleX(1);
+}
+
+.section-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* =========================== Home Page =========================== */
@@ -149,7 +136,7 @@ p a:hover::before {
 }
 
 /* =========== Featured Playlists =========== */
-.home-page section:nth-of-type(1) div:nth-of-type(1) { 
+.home-page section:nth-of-type(1) ul:nth-of-type(1) li div { 
     display: flex;
     justify-content: space-between;
     box-shadow: var(--box-shadow);
@@ -196,23 +183,17 @@ p a:hover::before {
     width: 100%;
 }
 
-.home-page section:nth-of-type(1) div:nth-of-type(1) {
+/* fix dit zodat de h2 niet een te brede underline krijgt */
+.home-page section:nth-of-type(1) ul:nth-of-type(1) li div { 
     height: var(--item-size);
     width: var(--item-size);
 }
 
 /* =========== Made for User List =========== */
 
-.home-page section:nth-of-type(2) div:nth-of-type(1) {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .home-page section:nth-of-type(2) ul:nth-of-type(1) img {
-    height: 8.75em;
-    width: 8.75em;
+    height: 10em;
+    width: 100%;
     border-radius: 0.5em;
     margin-bottom: 1em;
 }
@@ -223,25 +204,27 @@ p a:hover::before {
     grid-template-columns: 1fr 1fr;
 }
 
-.home-page section:nth-of-type(2) li h3 {
-    margin: 0;
-    padding-bottom: 0.5em;
-}
-
-.home-page section:nth-of-type(2) li p {
-    font-size: 0.875em;
-    margin: 0;
-    font-weight: 400;
-    color: var(--description, #6a6a6a);
-}
 
 .home-page section:nth-of-type(2) ul:nth-of-type(1) li {
     background-color: var(--block-list);
+    display: flex;
     border-radius: 0.5em;
     box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1);
     padding: 1em;
     height: 100%;
     transition: background-color .3s ease; /* Voor een vloeiende ease in en out transitie wanneer je hovert (en zodat het niet in 1x uit gaat wanneer je weg hovert) */
+}
+
+.home-page section:nth-of-type(2) li h3 {
+    margin: 0 0 0.5em 0;
+}
+
+.home-page section:nth-of-type(2) li p {
+    font-size: 0.875em;
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    color: var(--description, #6a6a6a);
 }
 
 .home-page section:nth-of-type(2) ul:nth-of-type(1) li:hover {
@@ -276,6 +259,7 @@ p a:hover::before {
     height: 9em;
     width: 9em;
     border-radius: 50%;
+    box-shadow: 0 4px 60px rgba(0,0,0,.5);
 }
 .profile-page section:nth-of-type(1) h1 {
     font-size: 1.7em;
@@ -299,42 +283,122 @@ p a:hover::before {
 }
 
 .profile-page section:nth-of-type(2) h3 {
-    font-size: .9em;
+    font-size: .8em;
+    margin-bottom: .5em;
 }
 
 .profile-page section:nth-of-type(2) p {
-    font-size: .8em;
+    font-size: .7em;
+    margin: 0;
+    color: var(--color-subtext);
 }
 
 .profile-page section:nth-of-type(2) > div:nth-of-type(1) {
     background: linear-gradient(rgba(0,0,0,.6) 0,var(--background-base) 100%);
     padding: 2em .5em .5em;
-    overflow-x: hidden;
-}
-
-.profile-page section:nth-of-type(2) > div:nth-of-type(1) div:nth-of-type(1){
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .profile-page section:nth-of-type(2) > div:nth-of-type(1) ul {
     display: flex;
-    
+    overflow-x: scroll;
+    scrollbar-width: none; /* Voor Firefox om de scrollbar te verbergen */
+    -ms-overflow-style: none; /* Voor Edge om de scrollbar te verbergen */
+}
+
+/* Scrollbar in Chrome verbergen */
+.profile-page section:nth-of-type(2) > div:nth-of-type(1) ul::-webkit-scrollbar {
+    display: none;
 }
 
 .profile-page section:nth-of-type(2) > div:nth-of-type(1) ul li{
     padding: 1em;
+    margin: 0 .5em;
+    border-radius: .5em;
+    background-color: var(--block-list);
+    transition: background-color .3s ease;
+}
+
+.profile-page section:nth-of-type(2) > div:nth-of-type(1) ul li:hover {
+    background-color: var(--block-list-hover);
 }
 
 .profile-page section:nth-of-type(2) > div:nth-of-type(1) ul li img{
     border-radius: 50%;
     height: 7em;
     width: 7em;
+    box-shadow: 0 4px 60px rgba(0,0,0,.5);
+}
+
+/* =========== Top tracks this month =========== */
+.profile-page section:nth-of-type(3) li {
+    display: grid;
+    width: 100%;
+    grid-template-columns: [index] 1em [first] 4fr [var1] 2fr [last] minmax(1em,1fr);
+    border-radius: .25em;
+    border: .5em solid transparent;
+    transition: background-color .3s ease;
+    position: relative;
+}
+
+.profile-page section:nth-of-type(3) li:hover {
+    background-color: var(--block-list-hover);
+}
+/* Track number */
+.profile-page section:nth-of-type(3) li > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.profile-page section:nth-of-type(3) li > div:nth-of-type(1) p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+.profile-page section:nth-of-type(3) li:hover > div:nth-of-type(1) p{
+    color: transparent;
+}
+
+.profile-page section:nth-of-type(3) li .play {
+    display: none;
+    position: absolute;
+    color: var(--color-text);
+    font-size: 1.5em;
+    cursor: pointer;
+    top: 0.1em;
+    left: 0.1em;
+}
+
+.profile-page section:nth-of-type(3) li:hover .play {
+    display: block;
 }
 
 
+/* Track image */
+.profile-page section:nth-of-type(3) li div:nth-of-type(2) img {
+    width: 2.25em;
+    height: 2.25em;
+    margin-right: 1em;
+}
+
+.profile-page section:nth-of-type(3) li p {
+    font-size: .7em;
+    margin: 0;
+}
+
+/* Track name */
+.profile-page section:nth-of-type(3) li div:nth-of-type(2) .song-title {
+    font-size: .8em;
+    font-weight: bold;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
 /* =========== Footer =========== */
 footer {
     position: fixed;
