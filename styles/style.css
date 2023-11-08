@@ -347,7 +347,6 @@ p a:hover::before, h2:hover::before {
 .profile-page section:nth-of-type(3) li > div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-content: center;
 
 }
@@ -357,7 +356,7 @@ p a:hover::before, h2:hover::before {
     font-size: 1em;
 }
 
-.profile-page section:nth-of-type(3) li:hover > div:nth-of-type(1) p{
+.profile-page section:nth-of-type(3) li:hover > div:nth-of-type(1) p {
     color: transparent;
 }
 
@@ -365,10 +364,9 @@ p a:hover::before, h2:hover::before {
     display: none;
     position: absolute;
     color: var(--color-text);
-    font-size: 1.5em;
+    font-size: 1.25em;
     cursor: pointer;
-    top: 0.1em;
-    left: 0.1em;
+    top: 0.3em;
 }
 
 .profile-page section:nth-of-type(3) li:hover .play {
