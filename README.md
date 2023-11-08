@@ -18,7 +18,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Auteur:
   Kenza Bennani-Meziane
   #### Je startniveau:
-  Blauwe piste
+  Rode piste
 
   #### Je focus:
   Surface Plane
@@ -42,7 +42,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Playlist pagina 
-  <img src="images/Playlist.png" width="375px" alt="omschrijving van de pagina">
+  <img src="images/Profile.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -112,15 +112,17 @@ Appearance
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Het beginnen was een beetje lastig, ik wist niet zo goed hoe ik een opzet moest maken.
+  Met behulp van de leraar en het advies dat ik kreeg, kon ik makkelijk op weg en besloot ik per deel alles goed uit te werken voordat ik naar het volgende deel besloot te gaan.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | Kenza          | Bregtje            | Fleur        | Stella           |
   | ---            | ---                | ---          | ---              |
-  | stappenplan    | HTML Checken       | en ik dit    | en dan ik dat    |
-  | bespreken      | Hover werkt niet   | nog een punt | dit wil ik zeker |
-  |                | Webkit scrollbar   | ...          | ...              |
+  | Stappenplan    | HTML Checken       | JavaScript   | Uploaden Github  |
+  | bespreken      | Hover werkt niet   |              | HTML/CSS checken |
+  |                | Webkit scrollbar   |              | Flexbox          |
 
 
   ### Verslag van meeting
@@ -149,11 +151,12 @@ Appearance
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Kenza          | Bregtje            | Fleur        | Sanne            |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
 
 
   ### Verslag van meeting
@@ -177,6 +180,9 @@ Appearance
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  
+  Content
+  - 
 
 </details>
 
@@ -193,7 +199,7 @@ Appearance
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Kenza          | Bregtje            | Fleur        | Sara             |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -237,6 +243,25 @@ Appearance
 
 
 
+## Voortgang 4 (week 6)
+
+<details>
+  <summary>uitwerken voor 4<sup>e</sup> voortgang</summary>
+
+  ### Stand van zaken
+  Uit mijn eindgesprek heb ik feedback gekregen en dit verwerkt. 
+
+
+  ### Verslag van meeting
+  hier na afloop snel de uitkomsten van de meeting vastleggen
+
+  - punt 1
+  - punt 2
+  - nog een punt
+  - ...
+
+</details>
+
 
 
 ## Bronnenlijst
@@ -248,8 +273,8 @@ Appearance
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. ChatGPT (voor het verbergen van de scrollbar op Profile pagina)
+  2. States oefening van de les (voor de underline in "Show All" linkjes)
   3. ...
 
 </details>
